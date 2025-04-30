@@ -11,12 +11,12 @@
   function getFixedOffset(i, amplitud, base) {
   const patrones = [0, 1.2, -1.3, 2.1, -2.2, 3, -3.1, 4.2, -4.3, 5.2];
   return base + patrones[i % patrones.length] * amplitud;
-}
+  }
 
-function getDispersedOffset(i, base, amplitud) {
-  const salto = [0, 1.7, -2.2, 2.5, -1.3, 3.3, -2.6, 4.1, -3.2, 2.9];
-  return base + salto[i % salto.length] * amplitud;
-}
+  function getDispersedOffset(i, base, amplitud) {
+    const salto = [0, 1.7, -2.2, 2.5, -1.3, 3.3, -2.6, 4.1, -3.2, 2.9];
+    return base + salto[i % salto.length] * amplitud;
+  }
 
   import { onMount } from "svelte";
 
@@ -24,7 +24,8 @@ function getDispersedOffset(i, base, amplitud) {
   if (contenedorPilotos) {
     contenedorPilotos.scrollLeft = contenedorPilotos.scrollWidth;
   }
-});
+  });
+
   let datos = [
     { categoria: "Max Verstappen", valor: 24 },
     { categoria: "Jim Clark", valor: 33 },
@@ -109,14 +110,14 @@ function getDispersedOffset(i, base, amplitud) {
     <div class="tabla-pilotos" bind:this={contenedorPilotos}>
   
   <div class="celda">
-    <img src="/images/ocon.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/ocon.avif" alt="Esteban Ocon" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Esteban Ocon</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/pias.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/pias.avif" alt="Oscar Piastri" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Oscar Piastri</p>
     </div>
@@ -124,98 +125,98 @@ function getDispersedOffset(i, base, amplitud) {
   
   
   <div class="celda">
-    <img src="/images/sainz.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/sainz.jpg" alt="Carlos Sainz" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Carlos Sainz</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/perez.webp" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/perez.webp" alt="Sergio Pérez" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Sergio Pérez</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/clark.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/clark.jpg" alt="Jim Clark" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Jim Clark</p>
     </div>
   </div>
       
   <div class="celda">
-    <img src="/images/russell.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/russell.avif" alt="George Russell" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">George Russell</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/norris.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/norris.avif" alt="Lando Norris" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Lando Norris</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/lauda.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/lauda.jpg" alt="Niki Lauda" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Niki Lauda</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/leclerc.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/leclerc.avif" alt="Charles Leclerc" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Charles Leclerc</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/max.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/max.avif" alt="Max Verstappen" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Max Verstappen</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/alonso.avif" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/alonso.avif" alt="Fernando Alonso" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Fernando Alonso</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/seba.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/seba.jpg" alt="Sebastian Vettel" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Sebastian Vettel</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/prost.webp" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/prost.webp" alt="Alain Prost" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Alain Prost</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/senna.webp" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/senna.webp" alt="Ayrton Senna" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Ayrton Senna</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/fangio.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/fangio.jpg" alt="Juan M. Fangio" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Juan M. Fangio</p>
     </div>
   </div>
   
   <div class="celda">
-    <img src="/images/schum.jpg" alt="Juan Manuel Fangio" class="imagen-piloto">
+    <img src="/images/schum.jpg" alt="Michael Schumacher" class="imagen-piloto">
     <div class="nombre-rectangulo">
       <p class="nombre-piloto-tabla">Michael Schumacher</p>
     </div>
@@ -309,6 +310,10 @@ function getDispersedOffset(i, base, amplitud) {
   </div>
 </main>
 
+<h3 class ="conclusion">
+  En <span class="resaltado">conclusión</span>, logramos observar, particularme con el gráfico de dispersión, que existe una gran disparidad entre los datos a medida que aumentan su valor. Por su parte, el gráfico de barras apiladas sirve para representar el acumulado por cada posición del ranking.
+</h3>
+
 <footer class="footer">
   <div class="footer-content"></div>
     <p>Proyecto para la materia <strong>Visualización de Datos</strong> – Universidad Torcuato Di Tella</p>
@@ -326,10 +331,6 @@ function getDispersedOffset(i, base, amplitud) {
 </footer>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-
   .main-title {
     text-align: center;
     font-family: 'Anton', sans-serif;
@@ -342,7 +343,6 @@ function getDispersedOffset(i, base, amplitud) {
     text-align:center;
     font-size: 2.7rem;
     font-family: 'Anton', sans-serif;
-
     color: #000000;
     margin-top: 60px;
     margin-bottom: 25px;
@@ -362,6 +362,16 @@ function getDispersedOffset(i, base, amplitud) {
     text-align:center;
     font-size: 2rem;
     font-family: 'Anton', sans-serif;
+    font-style: italic;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .conclusion {
+    text-align:justify;
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
     font-style: italic;
     color: #000000;
     margin-top: 30px;
@@ -471,21 +481,21 @@ function getDispersedOffset(i, base, amplitud) {
     font-family: 'Arial', sans-serif;
     font-size: 0.95rem;
     border-top: 2px solid #aaa;
-    width: 100vw; /* Ocupa el 100% del viewport */
+    width: 100vw;
     position: relative;
-    left: 50%; /* Centrado forzado */
-    right: 50%; /* Centrado forzado */
-    margin-left: -50.5vw; /* Compensa el desplazamiento */
-    margin-right: -50.5vw; /* Compensa el desplazamiento */
-    box-sizing: border-box; /* Evita que el padding afecte el ancho */
-}
+    left: 50%;
+    right: 50%;
+    margin-left: -50.5vw;
+    margin-right: -50.5vw;
+    box-sizing: border-box;
+  }
 
   .footer-content {
   max-width: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-}
+  }
 
   .footer a {
     color: #1e90ff;
@@ -542,7 +552,7 @@ function getDispersedOffset(i, base, amplitud) {
   .f1-logo {
     width: 200px;
     height: auto;
-    filter: brightness(0) invert(1); /* logo blanco */
+    filter: brightness(0) invert(1);
     transition: opacity 0.3s ease;
     display: block;
     margin-left: 90px;
@@ -561,7 +571,7 @@ function getDispersedOffset(i, base, amplitud) {
 
   .nav-menu a {
     color: white;
-    text-decoration: none; /* ✅ quita subrayado nativo */
+    text-decoration: none;
     margin-left: 10px;
     font-size: 1.15rem;
     position: relative;
@@ -571,160 +581,151 @@ function getDispersedOffset(i, base, amplitud) {
 
   .nav-menu a {
     position: relative;
-    display: inline-block; /* ✅ clave para que el ancho sea el del texto */
+    display: inline-block;
     text-decoration: none;
-    padding: 10px 0;        /* ✅ solo padding vertical */
-    margin: 0 20px;         /* separación horizontal entre ítems */
+    padding: 10px 0;
+    margin: 0 20px;
     color: white;
     font-size: 1.15rem;
     font-weight: 600;
   }
 
-  .nav-menu a::after {     /* BARRA GRUESAA */
+  .nav-menu a::after {
     content: "";
     position: absolute;
-    bottom: 7px;     /* separación con el texto */
-    left: 0;         /* empieza justo donde empieza el texto */
-    width: 100%;     /* ✅ exactamente mismo ancho que el texto */
+    bottom: 7px;
+    left: 0;
+    width: 100%;
     height: 4px;
     background-color: black;
-    display: none;   /* aparece solo en hover/activo */
+    display: none;
   }
 
-/* Estilo al hacer hover o cuando está activo */
-.nav-menu a:hover,
-.nav-menu a.active {
-  color: black;
-}
+  .nav-menu a:hover,
+  .nav-menu a.active {
+    color: black;
+  }
 
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-  display: block;
-}
+  .nav-menu a:hover::after,
+  .nav-menu a.active::after {
+    display: block;
+  }
 
   .container {
-  max-width: 1200px; /* o el ancho de tu rectángulo gris */
-  margin: 0 auto; /* centra horizontalmente */
-  padding: 0 30px; /* margen interno a izquierda y derecha */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 37px;
-}
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 37px;
+  }
 
-.tabla-pilotos-con-flechas {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  width: 1280px; /* mismo ancho que tu .container y .race-track */
-  margin: 40px auto 0 auto;
-  border: 4px solid black;
-  background-color: #800000;
-  box-sizing: border-box;
-  height: 300px; /* Aumentada para dar más presencia */
+  .tabla-pilotos-con-flechas {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 1280px;
+    margin: 40px auto 0 auto;
+    border: 4px solid black;
+    background-color: #800000;
+    box-sizing: border-box;
+    height: 300px;
+  }
 
-}
+  .flecha {
+    font-size: 60px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 20px;
+    background-color: #e10600;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.flecha {
-  font-size: 60px;
-  color: black;
-  cursor: pointer;
-  user-select: none;
-  padding: 10px 20px;
-  background-color: #e10600;
+  .flecha:hover {
+    background-color: #c40000;
+  }
 
-  font-weight: bold;
-  transition: background-color 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .tabla-pilotos {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+  }
 
-.flecha:hover {
-  background-color: #c40000;
-}
+  .celda {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: 2px solid black;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
 
-.tabla-pilotos {
-  display: flex;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
-}
+  .celda:first-child {
+    border-left: none;
+  }
 
-.celda {
-  flex: 0 0 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-left: 2px solid black;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative; /* ✅ necesario para posicionar el rectángulo */
-  overflow: hidden;   /* ✅ asegura que no se salga nada */
-  height: 100%;       /* ✅ asegura altura consistente */
-}
+  .imagen-piloto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.celda:first-child {
-  border-left: none; /* la primera no necesita borde izquierdo extra */
-}
+  .nombre-rectangulo {
+    background-color: black;
+    padding: 5px 8px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 
-.imagen-piloto {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  }
 
-.nombre-rectangulo {
-  background-color: black;
-  padding: 5px 8px;           /* Reduce ancho del rectángulo negro */
-  display: inline-block;       /* Para que el ancho se ajuste al contenido */
-  position: absolute;
-  bottom: 15px;                /* ✅ Subís el nombre más arriba */
-  left: 50%;                   /* Centrado horizontal */
-  transform: translateX(-50%); /* Centrado real */
+  .nombre-piloto-tabla {
+    white-space: nowrap;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
 
-}
+  .grupo-label {
+    position: absolute;
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    z-index: 5;
+  }
 
-.nombre-piloto-tabla {
-  white-space: nowrap;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-align: center;
-  color: white;
-  margin: 0;
-}
+  .historicos-label {
+    top: 0px;
+    left: 7.5%;
+    transform: translateX(-50%);
+  }
 
-.grupo-label {
-  position: absolute;
-  font-size: 2.3rem;
-  font-weight: bold;
-  font-family: 'Anton', sans-serif;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  z-index: 5;
-}
-
-.historicos-label {
-  top: 0px;
-  left: 7.5%;
-  transform: translateX(-50%);
-}
-
-.actuales-label {
-  bottom: 0px;
-  left: 6.8%;
-  transform: translateX(-50%);
-}
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  overflow-x: hidden; /* evita scroll horizontal indeseado */
-}
+  .actuales-label {
+    bottom: 0px;
+    left: 6.8%;
+    transform: translateX(-50%);
+  }
+  
 </style>
-

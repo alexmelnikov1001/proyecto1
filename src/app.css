@@ -3,8 +3,8 @@
 
 
 body {
-  background-color: rgb(255, 255, 255); /* Fondo negro */
-  color: white; /* Texto en blanco para contraste */
+  background-color: rgb(255, 255, 255);
+  color: white;
   padding-top: 70px;
   
 }
@@ -22,10 +22,10 @@ body {
 
   .main-title .line {
     display: block;
-    width: 50%; /* Make the lines shorter */
+    width: 50%;
     height: 2px;
     background-color: black;
-    margin: 10px auto; /* Center the lines */
+    margin: 10px auto;
   }
 
   .rectangle {
@@ -67,6 +67,4 @@ body {
     font-size: 18px;
     color: black;
     margin-top: 10 px;
-    
   }
-
